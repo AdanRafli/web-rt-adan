@@ -1,0 +1,30 @@
+<?php
+// Membuat koneksi ke database
+$servername = "localhost";
+$username = "username_db";
+$password = "password_db";
+$dbname = "nama_database";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Memeriksa koneksi
+if (!$conn) {
+    die("Koneksi database gagal: " . mysqli_connect_error());
+}
+
+// Mengambil nilai dari form
+$nama = $_POST['nama'];
+$alamat = $_POST['alamat'];
+// ... ambil nilai lainnya
+
+// Menjalankan query SQL
+$sql = "INSERT INTO pendaftaran (nama, alamat) VALUES ('$nama', '$alamat')";
+if (mysqli_query($conn, $sql)) {
+    echo "Pendaftaran berhasil";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+// Menutup koneksi database
+mysqli_close($conn);
+?>
