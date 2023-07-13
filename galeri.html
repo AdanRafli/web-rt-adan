@@ -19,52 +19,82 @@
 
 <body>
 
-	<!-- Creating a navigation bar using the
-		.navbar class of bootstrap -->
-	<nav class="navbar navbar-expand-sm navbar-light bg-dark">
-	<a class="navbar-brand" href="#">My Website</a>
-
-		<ul class="navbar-nav ml-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">
-				Home
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="kegiatan.html">
-				Kegiatan
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="galeri.html">
-				Galeri
-				</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="about.html">
-				About
-				</a>
-		</ul>
-	</nav>
+	<!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold">
+		  <a class="navbar-brand" href="#">RT 01 - Kayuringin Jaya</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon" sytle=".navbar-toggler-icon {
+			  background-image: url(data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000…p='round' stroke-miterlimit='10' d='M47h22M4 15h22M423h22'/%3e%3c/svg%3e);
+			  }"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+			  <a class="nav-item nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+			  <a class="nav-item nav-link" href="kegiatan.html">Kegiatan</a>
+			  <a class="nav-item nav-link" href="berita.html">Berita</a>
+			  <a class="nav-item nav-link active" href="galeri.html">Galeri</a>
+			</div>
+		  </div>
+		</nav>
 	
 	<!-- Jumbotron -->
 	<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Galeri RT</h1>
-	<img src="img/pemandangan.jpg" class="img-fluid" alt="Responsive image">
-	<img src="img/pemandangan.jpg" class="img-fluid" alt="Responsive image">
-	<img src="img/pemandangan.jpg" class="img-fluid" alt="Responsive image">
-  </div>
-</div>
+		<div class="container">
+		  <h1 class="display-4">Galeri RT</h1>
+		  <div class="card-group">
+			  <div class="card">
+				<img class="card-img-top" src="pict/pict1.jpeg" alt="Card image cap">
+				<div class="card-body">
+				  <h5 class="card-title">Pemotongan daging Qurban oleh pengurus RT</h5>
+				  <p class="card-text"><small class="text-muted">29/6/2023</small></p>
+				</div>
+			  </div>
+			  <div class="card">
+				<img class="card-img-top" src="pict/pict2.jpeg" alt="Card image cap">
+				<div class="card-body">
+				  <h5 class="card-title">Acara Qurban RT tahun 2023</h5>
+				  <p class="card-text"><small class="text-muted">29/6/2023</small></p>
+				</div>
+			  </div>
+			  <div class="card">
+				<img class="card-img-top" src="pict/pict3.jpeg" alt="Card image cap">
+				<div class="card-body">
+				  <h5 class="card-title">Pemotongan Hewan qurban</h5>
+				  <p class="card-text"><small class="text-muted">29/6/2023</small></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
 </body>
-<!-- Footer -->
-<footer class="page-footer font-small blue bg-dark">
-
-	<!-- Copyright -->
-	<div class="footer-copyright text-center py-3">© 2023 Copyright: Adan Rafli
-	</div>
-	<!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+<footer class="footer bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Tentang RT</h5>
+                <p>Deskripsi tentang RT dan informasi kontak.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Link Terkait</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Kontak</h5>
+                <p>Alamat RT</p>
+                <p>Telepon: 123-456-7890</p>
+                <p>Email: info@rtwebsite.com</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2023 RT Website. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
